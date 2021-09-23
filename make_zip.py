@@ -8,5 +8,5 @@ class Zip(Base):
     This class will have fields and methods, that will make zip-archives.
     '''
 
-    __map_path =
+    # __map_path 
 

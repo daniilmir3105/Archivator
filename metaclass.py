@@ -6,6 +6,7 @@ class BaseClass(metaclass=ABCMeta):
     '''
 
     # this is base field(there will be path to files or maps
+    # @ab
     __field = ''
 
     # this will be a setter 

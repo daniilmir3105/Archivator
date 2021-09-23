@@ -11,5 +11,9 @@ class Zip(Base):
     __map_path = '' 
 
     # this is setter for our map-path
-    def set_map_path(self, var): 
-        
+    def set_map_path(self, var): -> Base.set_field()
+        self.__map_path = var
+
+    # this is getter for our map-path
+    def set_map_path(self, var): -> Base.set_field()
+        self.__map_path = var

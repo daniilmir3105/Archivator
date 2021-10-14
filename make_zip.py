@@ -1,5 +1,5 @@
 import metaclass as mc
-# from abc import
+# from abc import abstractmethod, abstractproperty
 
 Base = mc.BaseClass()
 

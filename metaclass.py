@@ -1,4 +1,4 @@
-from abc import ABCMeta, abstractmethod, abstractproperty
+from abc import ABCMeta, abstractmethod, abstractproperty, abstractclassmethod
 
 class BaseClass(metaclass=ABCMeta):
     '''
@@ -24,7 +24,7 @@ class BaseClass(metaclass=ABCMeta):
     # this will be setter for our field 
     @abstractmethod
     @basic_method.setter
-    def set_field(self, variable):
+    def basic_method(self, variable):
         '''
         This abstract method will be base for other methods.
         :param variable: must be string(path to file or map)
@@ -35,7 +35,7 @@ class BaseClass(metaclass=ABCMeta):
 
     @abstractmethod
     @basic_method.getter
-    def get_field(self): 
+    def basic_method(self):
         '''
         This abstract method will get this field.
         :param: none 
@@ -44,6 +44,7 @@ class BaseClass(metaclass=ABCMeta):
         return self.__field
 
     @abstractmethod
+    @classmethod
     def method(self, variable):
         '''
         This abstract method will be base for other methods.

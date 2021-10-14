@@ -7,7 +7,7 @@ class BaseClass(metaclass=ABCMeta):
 
     # this is base field(there will be path to files or maps
     # @ab
-    __field = ''
+    __path = ''
 
     # this will be a setter 
     @abstractmethod
@@ -30,7 +30,7 @@ class BaseClass(metaclass=ABCMeta):
         :param variable: must be string(path to file or map)
         :return: nothing 
         '''
-        self.__field = variable
+        self.__path = variable
 
 
     @abstractmethod
@@ -41,7 +41,7 @@ class BaseClass(metaclass=ABCMeta):
         :param: none 
         :return: field
         ''' 
-        return self.__field
+        return self.__path
 
     @abstractmethod
     @classmethod

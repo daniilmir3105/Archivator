@@ -1,5 +1,5 @@
 import metaclass as mc
-from abc import
+# from abc import
 
 Base = mc.BaseClass()
 
@@ -11,9 +11,10 @@ class Zip(Base):
     __map_path = '' 
 
     # this is setter for our map-path
-    def set_map_path(self, var): -> Base.set_field()
+    def set_map_path(self, var): #-> Base.set_field()
         self.__map_path = var
 
     # this is getter for our map-path
-    def set_map_path(self, var): -> Base.set_field()
-        self.__map_path = var
+    def get_map_path(self): #-> Base.set_field()
+        return self.__map_path
+        # pass

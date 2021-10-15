@@ -1,5 +1,6 @@
 from abc import ABCMeta, abstractmethod, abstractproperty, abstractclassmethod
 
+
 class BaseClass(metaclass=ABCMeta):
     '''
     This class will be base for our classes with methods for our app.
@@ -10,7 +11,7 @@ class BaseClass(metaclass=ABCMeta):
     __path = ''
 
     # this will be a setter 
-    @abstractmethod
+    # @abstractmethod
     @property
     def basic_method(self):
         '''
@@ -20,9 +21,8 @@ class BaseClass(metaclass=ABCMeta):
         '''
         pass
 
-
-    # this will be setter for our field 
-    @abstractmethod
+    # this will be setter for our field
+    # @abstractmethod
     @basic_method.setter
     def basic_method(self, variable):
         '''
@@ -32,18 +32,17 @@ class BaseClass(metaclass=ABCMeta):
         '''
         self.__path = variable
 
-
-    @abstractmethod
+    # @abstractmethod
     @basic_method.getter
     def basic_method(self):
         '''
         This abstract method will get this field.
         :param: none 
         :return: field
-        ''' 
+        '''
         return self.__path
 
-    @abstractmethod
+    # @abstractmethod
     @classmethod
     def method(self, variable):
         '''

@@ -1,10 +1,11 @@
-import metaclass as mc
+# import metaclass as mc
+from metaclass import BaseClass
 import shutil
 # from abc import abstractmethod, abstractproperty
 
-Base = mc.BaseClass()
+# Base = mc.BaseClass()
 
-class Zip(Base):
+class Zip(BaseClass):
     '''
     This class will have fields and methods, that will make zip-archives.
     '''

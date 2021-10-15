@@ -14,10 +14,10 @@ def print_hi(name):
 if __name__ == '__main__':
     # this is basic object for working with files and maps
     obj_for_archivating = make_zip.Zip()
-    obj_for_archivating.basic_method = r'C:\Users\Daniil\Documents\BioWare'
+    obj_for_archivating.basic_method = r'C:\Users\Daniil\Documents\УТЁБА\Инженерка'
     map_path = obj_for_archivating.basic_method
 
-    obj_for_archivating.make_zip_archive(path_from=map_path, path_to=r'', file_name='archive')
+    obj_for_archivating.make_zip_archive(path_from=map_path, path_to=r'C:\Users\Daniil\Documents\Daniil', file_name='archive')
     # print_hi('world!')
 
 

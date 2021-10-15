@@ -17,7 +17,7 @@ if __name__ == '__main__':
     obj_for_archivating.basic_method = r'C:\Users\Daniil\Documents\УТЁБА\Инженерка'
     map_path = obj_for_archivating.basic_method
 
-    # obj_for_archivating.make_zip_archive(path_from=map_path, path_to=r'C:\Users\Daniil\Documents\Daniil', file_name='archive')
+    obj_for_archivating.make_zip_archive(path_from=map_path, path_to=r'C:\Users\Daniil\Documents\Daniil', file_name='archive')
     # print_hi('world!')
 
 

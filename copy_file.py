@@ -3,5 +3,6 @@ import shutil
 
 class Copying(BaseClass):
     '''
-    This class will have methods for
+    This class will have methods for copying files and fields.
     '''
+

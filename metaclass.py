@@ -6,12 +6,10 @@ class BaseClass(metaclass=ABCMeta):
     This class will be base for our classes with methods for our app.
     '''
 
-    # this is base field(there will be path to files or maps
-    # @ab
+    # this is base field(there will be path to files or maps)
     __path = ''
 
-    # this will be a setter 
-    # @abstractmethod
+    # this will be a setter
     @property
     def basic_method(self):
         '''
@@ -22,7 +20,6 @@ class BaseClass(metaclass=ABCMeta):
         pass
 
     # this will be setter for our field
-    # @abstractmethod
     @basic_method.setter
     def basic_method(self, variable):
         '''
@@ -32,7 +29,6 @@ class BaseClass(metaclass=ABCMeta):
         '''
         self.__path = variable
 
-    # @abstractmethod
     @basic_method.getter
     def basic_method(self):
         '''
@@ -42,7 +38,6 @@ class BaseClass(metaclass=ABCMeta):
         '''
         return self.__path
 
-    # @abstractmethod
     @classmethod
     def method(self, variable):
         '''

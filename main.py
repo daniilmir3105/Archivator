@@ -1,5 +1,6 @@
 # This is a sample Python script.
 import make_zip
+import backup_for_games
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
@@ -16,9 +17,11 @@ if __name__ == '__main__':
     obj_for_archivating = make_zip.Zip()
     obj_for_archivating.basic_method = r'C:\Users\Daniil\Documents\УТЁБА\Инженерка'
     map_path = obj_for_archivating.basic_method
+    back = backup_for_games.Backup()
 
-    obj_for_archivating.make_zip_archive(path_from=map_path, path_to=r'C:\Users\Daniil\Documents\Daniil', file_name='archive')
+    # obj_for_archivating.make_zip_archive(path_from=map_path, path_to=r'C:\Users\Daniil\Documents\Daniil', file_name='archive')
     # print_hi('world!')
+    back.make_backup(path_from=map_path, path_to=r'C:\Users\Daniil\Documents\Daniil\Backups\TLD')
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

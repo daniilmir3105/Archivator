@@ -3,7 +3,7 @@ from metaclass import BaseClass
 # import abc
 import pafy
 
-class Copying(BaseClass):
+class Downloading(BaseClass):
     '''
     This class will have methods to download videos from yuotube.
     '''
@@ -35,14 +35,16 @@ class Copying(BaseClass):
         return self.__url_var
 
     @classmethod
-    def copy_file(self, url, path_to):
+    def download_video(self, url, path_to):
         '''
 
-        :param url:
+        :param url: string, url of video on youtube
+        path_to: string, path to folder, where our downloaded video must be
         :return:
         '''
 
         pafy_obj = pafy.new(url=url)
         stream_obj = pafy_obj.getbest()
-        filename = stream_obj.download()
-        pass
+        filename = stream_obj.download(filepath=path_to)
+        # pass
+        return filename

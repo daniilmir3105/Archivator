@@ -43,4 +43,6 @@ class Copying(BaseClass):
         '''
 
         pafy_obj = pafy.new(url=url)
+        stream_obj = pafy_obj.getbest()
+        filename = stream_obj.download()
         pass
